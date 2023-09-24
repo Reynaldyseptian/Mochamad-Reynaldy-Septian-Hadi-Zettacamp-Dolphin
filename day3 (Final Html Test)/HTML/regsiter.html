@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="../assets/CSS/register.css">
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="header">
+                <nav class="header-navbar">
+                    <ul>
+                      <li><a href="#" class="active">Register</a></li>
+                      <li><a href="./about.html">About</a></li>
+                    </ul>
+                    <img class="navbar-img" src="../assets/IMAGES/black_spotify.png" alt="black_spotify">
+                  </nav>
+            </div>
+            <div class="body">
+                <div class="form-container">
+                    <img class="form-img" src="../assets/IMAGES/green_spotify.png" alt="green_spotify">
+                    <h2>Create Your Spotify Account</h2>
+                    <form action="./profile.html">
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                      </div>
+                      <div class="form-group">
+                        <label>Account</label>
+                        <div class="radio">
+                          <div class="radio-ctrl">
+                            <input type="radio" id="free" name="Account">
+                            <label for="Account">Free</label>
+                          </div>
+                          <div class="radio-ctrl">
+                            <input type="radio" id="premium" name="Account">
+                            <label for="Account">Premium</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                      </div>
+                      <button type="submit" name="submit">Sign Up</button>
+                    </form>
+                  </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2023 Your Website | All rights reserved</p>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>
