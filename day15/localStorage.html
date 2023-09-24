@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header-navbar">
+            <p>Inventory Books</p>
+            <img class="navbar-img" src="./Assets/IMAGES/germ_5282710.png" alt="logo">
+         </nav>
+    </header>
+    <div class="body">
+        <table id="tableBuku"></table>
+        <div>
+            <button id="addButton" onclick="addNewBook()"> Add New Book</button>
+            <button id="clearData" onclick="clearAllData()">Delete All</button>
+            <button id="refreshData" onclick="refreshData()">Refresh</button>
+        </di>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2023 Your Website | All rights reserved</p>
+    </footer> 
+</body>
+<script src="./localStorage.js"></script>
+</html>

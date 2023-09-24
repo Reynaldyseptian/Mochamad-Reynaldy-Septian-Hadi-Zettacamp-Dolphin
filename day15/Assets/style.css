@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.header-navbar {
+    background-color: #000080;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .header-navbar p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+
+/* Styling for the body */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px; /* Add padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the table */
+#tableBuku {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tableBuku th,
+#tableBuku td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#tableBuku th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Style for the "Add New Book" button */
+#addButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#addButton:hover {
+  background-color: #45a049;
+}
+
+#clearData {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#clearData:hover {
+  background-color: #d32f2f;
+}
+#refreshData {
+  background-color: #87cefa;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#refreshData:hover {
+  background-color:  #82ccfa;
+}
+
+/* Style for input fields inside the table */
+#tableBuku input[type="text"],
+#tableBuku input[type="number"] {
+  width: 80%;
+  padding: 5px;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the cancel button */
+#tableBuku button[type="button"] {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#tableBuku button[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+.bookImg{
+  height: 200px;
+  width: auto;
+  margin: 5;
+}
+
+
+
+/*Footer*/
+
+.footer {
+    background-color: #404040;
+    width: 100vw;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+  }
