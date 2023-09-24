@@ -1,0 +1,24 @@
+<div>
+    <app-movie-list *ngFor="let movieData of movieList" [data]="movieData" (deleteData)="onDeleteData(movieData.title)"></app-movie-list>
+    <app-add-movie (addMovieEvent)="addMovie($event)"></app-add-movie>
+</div>
+
+
+
+<!--
+    *ngFor="let movieData of movieList" 
+      ngFor: untuk looping sesuai dengan jumlah data yang mau di looping
+      movieList: adalah variabel dalam main.ts, berisi object of array
+      movieData adalah penyebutan tiap object dalam variabel MovieList
+
+    [data]="movieData" (input)
+    adalah syntax saat menggunakan Input
+    movieData adalah penyebutan tiap object dalam variabel MovieList
+    data: adalah istilah lain dari Movie Data, yang akan diambil oleh Input dalam children 
+
+    (deleteData)="onDeleteData(movieData.title) (output)
+    deleteData: adalah event Emitter dari children
+    onDeleteData: adalah function dalam main untuk delete data
+    movieData.title: adalah judul dari movie yang akan di delete
+-->
+
