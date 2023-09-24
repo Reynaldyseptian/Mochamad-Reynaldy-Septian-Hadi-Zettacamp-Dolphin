@@ -1,0 +1,8 @@
+<div class="main-body">
+    <app-movie-list [movieList]="movieList" (deleteMovieEvent)="deleteMovie($event)" ></app-movie-list>
+    <app-add-movie (addMovieEvent)="addMovie($event)" ></app-add-movie> 
+</div>
+
+<!-- <div>
+    <app-movie-list *ngFor="let movie of movieList" [movie]="movie"></app-movie-list>
+</div> -->

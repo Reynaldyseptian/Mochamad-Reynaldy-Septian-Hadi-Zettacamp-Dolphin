@@ -1,0 +1,85 @@
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles */
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* color: #333; Warna teks judul */
+}
+
+/* Card List Styles */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    width: 250px;
+    margin: 2px;
+    padding: 5px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Poster Styles */
+.poster {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Movie Title Styles */
+.movie-title {
+    font-size: 18px;
+    margin: 10px 0;
+    /* color: #555; Warna teks judul film */
+}
+
+/* Movie Info Styles */
+.movie-info {
+    font-size: 16px;
+    margin: 5px 0;
+    /* color: #777; Warna teks info film */
+}
+
+/* Button Container Styles */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* Watch Button Styles */
+.watch-button {
+    background-color: rgb(136, 8, 8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.watch-button:hover {
+    background-color: #0056b3;
+}

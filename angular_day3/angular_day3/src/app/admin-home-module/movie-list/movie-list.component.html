@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="title">Movie List</h1>
+    <div class="card-list">
+        <!-- Card 1 -->
+        <div class="card" *ngFor="let movie of movieList; let i = index" >
+            <img [attr.src]="movie.imgUrl" alt="Movie 1" class="poster">
+            <h2 class="movie-title">{{ movie.title }}</h2>
+            <h3 class="movie-info">{{ movie.director }}</h3>
+            <button class="watch-button" (click)="onButtonClick(i)">Delete</button>
+        </div>
+    </div>
+</div>
+
