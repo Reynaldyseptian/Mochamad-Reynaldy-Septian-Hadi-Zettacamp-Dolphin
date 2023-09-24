@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 class="title">{{category}}</h1>
+    <div class="card-list">
+        <!-- Card 1 -->
+        <div class="card" *ngFor="let movie of movieList; let i = index">
+            <img [attr.src]="movie.imgUrl" alt="Movie 1" class="poster">
+            <h2 class="movie-title">{{ movie.title }}</h2>
+            <h3 class="movie-info">{{ movie.pesan }}</h3>
+            <button class="watch-button" (click)="onButtonClick(i)">Watch Movie</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+    <input [(ngModel)]="userName" placeholder="input user name">
+    <p>User Name: {{ userName }}</p>
+    <br>
+    <div *ngIf="userName; then printUserName; else printTamplate "></div>
+    <ng-template #printUserName>
+        <p>{{userName}}</p>
+    </ng-template>
+    <ng-template #printTamplate>
+        <p>User Not Found</p>
+    </ng-template>
+    <br>
+    <p [style.color]="textColor" (click)="changeTextColor()">Klik untuk mengubah warna teks</p>
+    <br>
+</div>

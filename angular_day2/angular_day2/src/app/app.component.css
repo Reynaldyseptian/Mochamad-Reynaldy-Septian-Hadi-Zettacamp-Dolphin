@@ -1,0 +1,31 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgray;
+    /* padding: 10px; */
+}
+.navbar .navbar-brand{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.navbar-button {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* .navbar-button:hover {
+    background-color: darkgreen;
+  } */
+
+  button:disabled{
+    background-color: rgb(3, 28, 3);
+  }
