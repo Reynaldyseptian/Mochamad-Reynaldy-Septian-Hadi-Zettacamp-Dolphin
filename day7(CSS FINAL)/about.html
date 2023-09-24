@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+      .body {
+        display: flex;
+        flex-direction: row;
+      }
+      .body-left {
+  width: 30%;
+}
+
+.body-right {
+  margin-left: 10%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-right-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content {
+  padding: 20px;
+  margin-bottom: 200px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  font-size: 16px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  color: #001f3f; /* Biru Navy */
+}
+
+.profile-info p {
+  margin: 5px 0;
+}
+
+.profile-info strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.followers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.followers-count,
+.following-count {
+  text-align: center;
+}
+
+.followers-count p,
+.following-count p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001f3f; /* Biru Navy */
+  margin: 0;
+}
+
+.followers-count span,
+.following-count span {
+  color: #333333;
+}
+
+.product-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0px 20px;
+    padding: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-info h3 {
+    margin: 0;
+    color: #000090;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    margin: 5px 0;
+  }
+  
+  .product-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .product-list-header{
+    color:#000066;
+    font-weight: 600;
+  }
+  
+  .product-list{
+    width: 95%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 8px 0px;
+    align-items: center;
+    background-color: #f2f2f2;
+    overflow: scroll;
+  }
+
+  .product-list-card {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  .product-list-image {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-list-title h4 {
+    margin-left: 40px;
+    color: #000090;
+  }
+
+  .buy-button .btn {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    background-color: #000066;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .buy-button .btn:hover{
+    background-color: #000090;
+    color: #ffffff;
+  }
+
+  .buy-button .btn:active{
+    background-color: #ffff7f;
+    color: #000066;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="header">
+                <nav class="header-navbar">
+                    <ul>     
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./shopping-list.html">Cart</a></li>
+                        <li><a href="./about.html" class="active">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                      </ul>
+                      <img class="navbar-img" src="./assets/IMAGES/germ_5282710.png" alt="black_spotify">
+                  </nav>
+            </div>
+            <div class="body">
+                <div class="body-left">
+                    <main class="main-content">
+                        <div class="profile">
+                          <div class="profile-image">
+                            <img src="./assets/IMAGES/IMG_1275.jpeg" alt="Profile Picture">
+                          </div>
+                          <div class="profile-info">
+                            <h2>Reynaldy Septian</h2>
+                            <p><strong>Email:</strong> Reynaldy@email.com</p>
+                            <p><strong>Phone:</strong> 0857-1234-5678</p>
+                            <p><strong>Username:</strong> Aldi04</p>
+                          </div>
+                        </div>
+                    
+                        <div class="followers">
+                          <div class="followers-count">
+                            <p>450K</p>
+                            <span>E-Wallet</span>
+                          </div>
+                          <div class="following-count">
+                            <p>280</p>
+                            <span>Monster Point</span>
+                          </div>
+                        </div>
+                      </main>
+                </div>
+                <div class="body-right">
+                  <h2>recommendation for you</h2>
+                   <!--Product card 1-->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://rtlimages.apple.com/cmc/dieter/store/16_9/R219.png?resize=672:378&output-format=jpg&output-quality=85&interpolation=progressive-bicubic" alt="product Image">
+        </div>
+        <div class="product-info">
+          <h3>Apple</h3>
+          <p><strong>Founders:</strong> Steve Jobs, Steve Wozniak, Ronald Wayne</p>
+          <p><strong>Founded Date:</strong>April 1, 1976</p>
+          <p><strong>City:</strong>  Los Altos, California, United Statesa</p>
+        </div>
+        <h4 class="product-list-header">Product List</h4>
+        <div class="product-list">
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://milenianews.com/wp-content/uploads/2023/02/FotoJet-36.jpg" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>M2 MAC MINI</h4>
+                </div>
+              </div>
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://www.digitaltrends.com/wp-content/uploads/2023/02/mac-mini-m2-pro-01.jpg?p=1" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>MAC MINI</h4>
+                </div>
+              </div>
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Pro_16_2023_M2_Max/teaser.jpg" alt="product Image" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>MacBook Pro 2023</h4>
+                </div>
+              </div>
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-select-202210_FMT_WHH?wid=640&hei=600&fmt=jpeg&qlt=90&.v=1670557209437" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>HomePod</h4>
+                </div>
+              </div>
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://www.notebookcheck.net/fileadmin/Notebooks/Apple/MacBook_Air_15_2023_M2_16_GB/IMG_9060.JPG" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>MacBook Air 2023</h4>
+                </div>
+              </div>
+            <div class="product-list-card">
+                <div class="product-list-image">
+                  <img src="https://media.cnn.com/api/v1/images/stellar/prod/220316195625-mac-studio-review-main.jpg?q=h_2236,w_3974,x_0,y_0" alt="product Image" alt="product list Image">
+                </div>
+                <div class="product-list-title">
+                  <h4>Mac Studio</h4>
+                </div>
+              </div>
+        </div>
+        <div class="buy-button">
+          <a href="#" class="btn">Click For More!</a>
+        </div>
+      </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2023 Your Website | All rights reserved</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

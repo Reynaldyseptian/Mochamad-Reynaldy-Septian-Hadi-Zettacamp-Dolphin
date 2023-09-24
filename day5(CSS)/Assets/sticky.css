@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.header-navbar {
+    width: 100%;
+    background-color: #000080;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed
+  }
+  
+  .navbar-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .header-navbar p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 50px;
+    text-decoration: underline;
+  }
+
+/*Body Style*/
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-card-satu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6rem;
+}
+.body-card-dua{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem;
+}
+.body-card-tiga{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.product-card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0px 20px;
+    padding: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .product-info h3 {
+    margin: 0;
+    color: #000099;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    margin: 5px 0;
+  }
+  
+  .product-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .buy-button .btn {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    background-color: #000066;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .buy-button .btn:hover{
+    background-color: #000090;
+    color: #ffffff;
+  }
+
+  .buy-button .btn:active{
+    background-color: #ffff7f;
+    color: #000066;
+  }
+
+/*Footer*/
+
+.footer {
+    background-color: #404040;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    /* margin-top: 50px; */
+
+  }

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .header-navbar {
+    background-color: #000080;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .header-navbar p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 50px;
+  }
+  
+  .body{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .body-left {
+    width: 33%;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-center {
+    width: 34%;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .body-right{
+    width: 33%;
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  table, th, tr, td{
+            border: 2px solid #f2f2f2;
+            border-collapse: collapse;
+
+        }
+
+   .fav-film{
+    background-color: lightgreen;
+   }
+
+   .fav-music{
+    background-color: lightcoral;
+   }
+
+   .fav-sport{
+    background-color: lightskyblue;
+   }
+
+
+  .footer {
+    background-color: #404040;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    margin-top: 190px;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <nav class="header-navbar">
+              <p>Favorite</p>
+              <img class="navbar-img" src="./Assets/IMAGES/germ_5282710.png" alt="logo">
+            </nav>
+        </div>
+        <main class="body">
+          <div class="body-left">
+            <h2>Film</h2>
+            <br>
+            <table>
+              <tr>
+                <th>Judul</th>
+                <th>Studio</th>
+                <th>Director</th>
+                <th>Release Date</th>
+              </tr>
+              <tr>
+                <td>Iron Man I</td>
+                <td>Paramount Pictures</td>
+                <td>Jon Favreau</td>
+                <td>2008</td>
+              </tr>
+              <tr class="fav-film">
+                <td>The Dark Knight</td>
+                <td>Warner Bros</td>
+                <td>Christopher Nolan</td>
+                <td>2008</td>
+              </tr>
+              <tr>
+                <td>Suicide Squad</td>
+                <td>Warner Bros</td>
+                <td>James Gunn</td>
+                <td>2016</td>
+              </tr>
+              <tr>
+                <td>DeadPool</td>
+                <td>20th Century Studios</td>
+                <td>Tim Millter</td>
+                <td>2016</td>
+              </tr>
+            </table>
+          </div>
+          <div class="body-center">
+            <h2>Music</h2>
+            <br>
+            <table>
+              <tr>
+                <th>Judul</th>
+                <th>Artis</th>
+                <th>Album</th>
+                <th>Duration</th>
+              </tr>
+              <tr>
+                <td>Canggih</td>
+                <td>Perunggu</td>
+                <td>Memorandum</td>
+                <td>04:30</td>
+              </tr>
+              <tr>
+                <td>Pastikan Riuh Akhiri Malammu</td>
+                <td>Perunggu</td>
+                <td>Memorandum</td>
+                <td>04:50</td>
+              </tr>
+              <tr class="fav-music">
+                <td>Langit Tak Seharusnya Biru</td>
+                <td>The Jansen</td>
+                <td>Binal Semakin Binal</td>
+                <td>04:00</td>
+              </tr>
+              <tr>
+                <td>Fana</td>
+                <td>The Paps</td>
+                <td>Hang Loose Baby</td>
+                <td>05:00</td>
+              </tr>
+            </table>
+          </div>
+          <div class="body-right">
+            <h2>Sport</h2>
+            <br>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Atlete</th>
+                <th>Team</th>
+                <th>Age</th>
+              </tr>
+              <tr class="fav-sport">
+                <td>Football</td>
+                <td>Kevin De Bruyne</td>
+                <td>Man. City</td>
+                <td>31</td>
+              </tr>
+              <tr>
+                <td>Football</td>
+                <td>David Silva</td>
+                <td>Man.City</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td>Basket Ball</td>
+                <td>Kawhi Leonard</td>
+                <td>Clippers</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <td>Basket Ball</td>
+                <td>Kyrie Irving</td>
+                <td>Brooklyn</td>
+                <td>31</td>
+              </tr>
+            </table>
+          </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2023 Your Website | All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

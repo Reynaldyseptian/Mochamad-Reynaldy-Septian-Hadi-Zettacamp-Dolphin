@@ -1,0 +1,92 @@
+@font-face{
+  font-family: font-saya;
+  src: url(./assets/FONT/nasalization/nasalization-rg.otf);
+}
+
+body {
+  margin: 0;
+  font-family: font-saya;
+  background-color: #ffffff; /* Putih */
+  color: #000000; /* Hitam */
+}
+
+.header-navbar {
+  background-color: #001f3f; /* Biru Navy */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.navbar-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.header-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header-navbar li {
+  display: inline;
+}
+
+
+.header-navbar li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 520;
+}
+
+.header-navbar li a.active {
+  border-bottom: 2px solid   #ffffff; /* Hitam */
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #0a1322; /* Biru Navy */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* HOME PAGE */
+
+.about-section,
+.process-section,
+.company-section {
+  margin-bottom: 30px;
+}
+
+.about-section h2,
+.process-section h2,
+.company-section h2 {
+  color: #001f3f; /* Biru Navy */
+}
+
+/* CART */
+
+
+
+/* PRODUCT */
+
+
+
+/* ABOUT */
+
+
+
+/* CONTACT */
+

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD ITEM</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+      .body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.form-container {
+  max-width: 400px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-img{
+  width: 30px;
+  height: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #001f3f;;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333333;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea{
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  height: 50px;
+}
+
+select{
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  height: 50px;
+}
+
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #001f3f;;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.bawah{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bawah-card{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0px 20px 10px 20px;
+  padding: 20px;
+  transition: 0.2s;
+  background-color: #f2f2f2;
+}
+
+
+.product-card:hover{
+transform: scale(1.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info h3 {
+  margin: 0;
+  color: #000090;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+.product-info strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.buy-button .btn {
+  display: block;
+  width: 90%;
+  padding: 10px;
+  background-color: #000066;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buy-button .btn:hover{
+  background-color: #000090;
+  color: #ffffff;
+}
+
+.buy-button .btn:active{
+  background-color: #ffff7f;
+  color: #000066;
+}
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="header">
+                <nav class="header-navbar">
+                    <ul>     
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./shopping-list.html" class="active">Cart</a></li>
+                      <li><a href="./about.html">About</a></li>
+                      <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <img class="navbar-img" src="./assets/IMAGES/germ_5282710.png" alt="black_spotify">
+                  </nav>
+            </div>
+            <div class="body">
+              <div class="atas">
+                <div class="form-container">
+                  <img class="form-img" src="./assets/IMAGES/germ_5282710.png" alt="green_spotify">
+                  <h2>Specification:</h2>
+                  <form action="./shopping-list.html">
+                    <div class="form-group">
+                      <label for="email">Product Name:</label>
+                      <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="name">Brand:</label>
+                      <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <p><b>RAM</b></p>
+                      <select name="ram" id="ram">
+                      <option value="RAM"><b>4 Gb</b></option>
+                      <option value="RAM"><b>6 Gb</b></option>
+                      <option value="RAM"><b>8 Gb</b></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <p><b>Color</b></p>
+                      <select name="ram" id="ram">
+                      <option value="RAM"><b>Red</b></option>
+                      <option value="RAM"><b>White</b></option>
+                      <option value="RAM"><b>Black</b></option>
+                      <option value="RAM"><b>Rose Gold</b></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label >Your Specific Message:</label>
+                      <textarea rows="5" placeholder="add a comment..."></textarea>
+                    </div>
+                    <button type="submit" name="submit">Submit Your Item</button>
+                  </form>
+                </div>
+              </div>
+              <div class="bawah">
+                <h2>Card Preview</h2>
+                <div class="bawah-card">
+                  <div class="product-card">
+                    <div class="product-image">
+                      <img src="https://www.yangcanggih.com/wp-content/uploads/2023/06/Apple-Vision-Pro-2.jpg" alt="product Image">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vision Pro</h3>
+                        <p><strong>Brand:</strong> Apple</p>
+                        <p><strong>Release Date:</strong> 2023</p>
+                        <p><strong>Type:</strong>Virtual Reality</p>
+                    </div>
+                    <div class="buy-button">
+                      <a href="#" class="btn">See More Detail</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <div class="product-image">
+                      <img src="https://www.apple.com/v/ipad-pro/al/images/overview/hero/hero_combo__fcqcc3hbzjyy_large.jpg" alt="product Image">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPad Pro</h3>
+                        <p><strong>Brand:</strong> Apple</p>
+                        <p><strong>Release Date:</strong> 2023</p>
+                        <p><strong>Type:</strong> Tabs</p>
+                    </div>
+                    <div class="buy-button">
+                      <a href="#" class="btn">See More Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            <footer class="footer">
+                    <p>&copy; 2023 Your Website | All rights reserved</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
