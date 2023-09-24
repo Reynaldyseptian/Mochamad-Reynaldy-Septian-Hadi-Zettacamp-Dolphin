@@ -1,0 +1,8 @@
+  <div class="animal-card">
+    <img [src]="animal.img" alt="{{ animal.animalName }}">
+    <h2>{{ animal.animalName }}</h2>
+    <p>{{ animal.nickName }}</p>
+    <p>{{ animal.asalNegara }}</p>
+    <button (click)="deleteAnimal()">Delete </button>
+    <button (click)="showDetail()" [routerLink]="['/detail',animal.id]">Detail</button>
+  </div>

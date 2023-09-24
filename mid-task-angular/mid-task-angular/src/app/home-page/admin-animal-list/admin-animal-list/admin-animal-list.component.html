@@ -1,0 +1,13 @@
+<!-- <app-admin-animal-card></app-admin-animal-card> -->
+<div class="body">
+    <div class="animal-container">
+        <app-admin-animal-card class="animal" *ngFor="let animal of animalList" [animal]="animal" (deleteClicked)="deleteAnimal($event)"></app-admin-animal-card>
+    </div>
+    <!-- <div class="detail-container">
+        <app-admin-animal-detail class="detail"></app-admin-animal-detail>
+    </div> -->
+    <div class="form-container">
+        <app-admin-animal-form></app-admin-animal-form>
+    </div>
+</div>
+

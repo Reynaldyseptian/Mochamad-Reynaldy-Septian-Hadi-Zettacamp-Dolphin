@@ -1,0 +1,45 @@
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.animal-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+}
+
+.animal {
+    width: calc(33% - 10px); 
+    margin: 5px;
+}
+
+
+.form-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1235px) {
+    .body {
+        flex-direction: column; /* Mengubah tata letak menjadi kolom */
+    }
+
+    .animal-container {
+        margin-left: 20px;
+        width: 100%; /* Kartu akan mengisi lebar penuh */
+    }
+
+    .animal {
+        width: calc(100% - 10px); 
+        margin: 5px;
+    }
+
+    .form-container {
+        width: 100px; /* Formulir akan mengisi lebar penuh */
+    }
+}

@@ -1,0 +1,97 @@
+<!-- <div class="card">
+  <div class="animal-form">
+    <h2>Tambah Data Hewan</h2>
+    <form (submit)="addAnimal()">
+      <div class="form-group">
+        <label for="animalName">Nama Hewan:</label>
+        <input type="text" id="animalName" name="newAnimal.animalName" [(ngModel)]="newAnimal.animalName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="nickName">Nama Panggilan:</label>
+        <input type="text" id="nickName" name="newAnimal.nickName" [(ngModel)]="newAnimal.nickName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" name="newAnimal.umur" [(ngModel)]="newAnimal.umur" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="habitat">Habitat:</label>
+        <input type="text" id="habitat" name="newAnimal.habitat" [(ngModel)]="newAnimal.habitat" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="asalNegara">Asal Negara:</label>
+        <input type="text" id="asalNegara" name="newAnimal.asalNegara" [(ngModel)]="newAnimal.asalNegara" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="isMamalia">Mamalia:</label>
+        <select id="isMamalia" name="newAnimal.isMamalia" [(ngModel)]="newAnimal.isMamalia" required>
+          <option value="true">Ya</option>
+          <option value="false">Tidak</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="img">Picture Url:</label>
+        <input type="text" id="img" name="newAnimal.img" [(ngModel)]="newAnimal.img" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Tambahkan</button>
+      </div>
+    </form>
+  </div>
+  
+</div> -->
+
+
+<div class="card">
+  <div class="animal-form">
+    <h2>Tambah Data Hewan</h2>
+    <form [formGroup]="myForm" (ngSubmit)="addAnimal()">
+      <div class="form-group">
+        <label for="animalName">Nama Hewan:</label>
+        <input type="text" id="animalName" formControlName="animalName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="nickName">Nama Panggilan:</label>
+        <input type="text" id="nickName" formControlName="nickName" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="umur">Umur:</label>
+        <input type="number" id="umur" formControlName="umur" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="habitat">Habitat:</label>
+        <input type="text" id="habitat" formControlName="habitat" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="asalNegara">Asal Negara:</label>
+        <input type="text" id="asalNegara" formControlName="asalNegara" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="isMamalia">Mamalia:</label>
+        <select id="isMamalia" formControlName="isMamalia" required>
+          <option value="true">Ya</option>
+          <option value="false">Tidak</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="img">Picture Url:</label>
+        <input type="text" id="img" formControlName="img" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Tambahkan</button>
+      </div>
+    </form>
+  </div>
+</div>

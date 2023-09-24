@@ -1,0 +1,13 @@
+<!-- <div class="title-animal">
+  <h4>Detail Data {{selectedAnimal.nickName}} si {{selectedAnimal.animalName}}</h4>
+</div> -->
+<div class="animal-detail">
+  <img [src]="selectedAnimal.img" alt="{{ selectedAnimal.animalName }}">
+  <h2 class="animal-name">{{ selectedAnimal.animalName }}</h2>
+  <p class="animal-nickname">Nickname: {{ selectedAnimal.nickName }}</p>
+  <p class="animal-age">Umur: {{ selectedAnimal.umur }} tahun</p>
+  <p class="animal-habitat">Habitat: {{ selectedAnimal.habitat }}</p>
+  <p class="animal-country">Asal Negara: {{ selectedAnimal.asalNegara }}</p>
+  <p class="animal-mamalia">Mamalia: {{ selectedAnimal.isMamalia ? 'Ya' : 'Tidak' }}</p>
+  <button class="animal-button" routerLink="/home">Back To List</button>
+</div>
