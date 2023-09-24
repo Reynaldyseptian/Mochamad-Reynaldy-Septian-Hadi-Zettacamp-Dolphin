@@ -1,0 +1,207 @@
+import { Injectable } from '@angular/core';
+import { movieObject } from "./movie.type";
+import { BehaviorSubject, Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataSharedServiceService {
+
+  constructor() { }
+
+  private allMovieData : movieObject[] = [ {
+    title: "One Piece",
+    director: "Oda",
+    imgUrl:"https://static.tvtropes.org/pmwiki/pub/images/2e5c6d37_566f_4274_b62d_ebf5fcbd0722.png",
+    price: 20000,
+    category: "action",
+    isWatched: false
+  },
+  {
+    title: "Naruto",
+    director: "Masashi Kisimoto",
+    imgUrl:"https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: true
+  },
+  {
+    title: "Jujutsu Kaizen",
+    director: "Unknown",
+    imgUrl:"https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+    price: 20000,
+    category: "action",
+    isWatched: true
+  },
+  {
+    title: "Kimetsu No Yaiba",
+    director: "Haruo Sotozaki",
+    imgUrl:"https://image.api.playstation.com/vulcan/ap/rnd/202106/1704/2ZfAUG5CTXdM34S1OhmMW1zF.jpg",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "The Dark Knight",
+    director: "Christopher Nolan",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+    price: 20000,
+    category: "action",
+    isWatched: false
+  },
+  {
+    title: "The Shawshank Redemption",
+    director: "Frank Darabont",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "Pulp Fiction",
+    director: "Quentin Tarantino",
+    imgUrl: "https://flxt.tmsimg.com/assets/p15684_p_v10_am.jpg",
+    price: 20000,
+    category: "action",
+    isWatched: false
+  },
+  {
+    title: "The Exorcist",
+    director: "William Friedkin",
+    imgUrl: "https://resizing.flixster.com/bau-3tTxnylLtGkzJwFDF9yGMEw=/206x305/v2/https://flxt.tmsimg.com/NowShowing/23512/23512_aa.jpg",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "Forrest Gump",
+    director: "Robert Zemeckis",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "The Godfather",
+    director: "Francis Ford Coppola",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "Inception",
+    director: "Christopher Nolan",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+    price: 20000,
+    category: "action",
+    isWatched: false
+  },
+  {
+    title: "Jaws",
+    director: "Steven Spielberg",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "The Matrix",
+    director: "Lana Wachowski, Lilly Wachowski",
+    imgUrl: "https://cdn1-production-images-kly.akamaized.net/pQm8ttnEeJ8P9JzEaRGOPSBZZJc=/800x1066/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3649560/original/076929300_1638349224-the_matrix.jpg",
+    price: 20000,
+    category: "action",
+    isWatched: false
+  },
+  {
+    title: "The Social Network",
+    director: "David Fincher",
+    imgUrl: "https://flxt.tmsimg.com/assets/p8078163_p_v8_ad.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "A Beautiful Mind",
+    director: "Ron Howard",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BMzcwYWFkYzktZjAzNC00OGY1LWI4YTgtNzc5MzVjMDVmNjY0XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "The King's Speech",
+    director: "Tom Hooper",
+    imgUrl: "https://komunikasi.unimma.ac.id/wp-content/uploads/2020/05/The-king-s-speech.jpg",
+    price: 20000,
+    category: "drama",
+    isWatched: false
+  },
+  {
+    title: "The Exorcism of Emily Rose",
+    director: "Scott Derrickson",
+    imgUrl: "https://m.media-amazon.com/images/M/MV5BMTI2NTM5MjQ0Nl5BMl5BanBnXkFtZTcwNDAxNjAzMQ@@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "The Conjuring",
+    director: "James Wan",
+    imgUrl: "data:image/jpeg;base64,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",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "Paranormal Activity",
+    director: "Oren Peli",
+    imgUrl: "data:image/jpeg;base64,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",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  },
+  {
+    title: "The Blair Witch Project",
+    director: "Daniel Myrick, Eduardo Sánchez",
+    imgUrl: "https://flxt.tmsimg.com/assets/p22546_p_v8_ap.jpg",
+    price: 20000,
+    category: "horror",
+    isWatched: false
+  }
+]
+
+
+  private movieDataSubject = new BehaviorSubject<movieObject[]>(this.allMovieData);
+
+  getMovieData(): Observable<movieObject[]> {
+    return this.movieDataSubject.asObservable();
+  }
+
+  getHorrorMovies(){
+    return this.allMovieData.filter(movie => movie.category === 'horror');
+  }
+
+  getActionMovies(){
+    return this.allMovieData.filter(movie => movie.category === 'action');
+  }
+  getDramaMovies(){
+    return this.allMovieData.filter(movie => movie.category === 'drama');
+  }
+  getYourMovies(){
+    return this.allMovieData.filter(movie => movie.isWatched === true);
+  }
+
+  
+
+  addYourMovie(movieTitle: string): void {
+    const index = this.allMovieData.findIndex(movie => movie.title === movieTitle);
+      this.allMovieData[index].isWatched = true;
+  }
+
+  movieHistoryRemove(movieTitle: string): void {
+    const index = this.allMovieData.findIndex(movie => movie.title === movieTitle);
+      this.allMovieData[index].isWatched = false;
+  }
+
+}
