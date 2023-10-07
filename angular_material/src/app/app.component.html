@@ -1,0 +1,46 @@
+
+<!-- <div class="main" >
+  <div class="navbar">
+    <div class="navbar-title">
+      <img class="logo" src="https://cdn-icons-png.flaticon.com/128/3409/3409366.png?ga=GA1.1.114240843.1691567014&track=ais">
+      <br>
+      <p>Album Store</p>
+    </div>
+    <button mat-button [routerLink]="['']"> <mat-icon class="navbar-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon></button>
+    <button mat-button [routerLink]="['/about']"><mat-icon class="navbar-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="info"></mat-icon></button>
+  </div>
+  <div class="body">
+    <router-outlet></router-outlet>
+  </div>  
+</div> -->
+
+
+<mat-drawer-container class="example-container">
+  <mat-drawer class="example-sidenav" mode="side" opened>
+    <h2>Auto-resizing sidenav</h2>
+    <hr>
+    <div class="toolbar" *ngIf="showFiller">
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['']">
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+          <span>Home Page</span>
+          <span class="example-spacer"></span>
+        </button>
+      </mat-toolbar-row>  
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['/about']">
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="info"></mat-icon>
+          <span>Information</span>
+          <span class="example-spacer"></span>
+        </button>
+      </mat-toolbar-row>  
+
+    </div>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+  <mat-drawer-content class="main-content">
+    <router-outlet ></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

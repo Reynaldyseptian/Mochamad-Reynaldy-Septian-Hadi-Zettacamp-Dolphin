@@ -1,0 +1,33 @@
+<div class="body">
+  <img class="img-cover" [src]="imgCover">
+  <div class="body-tabs">
+    <div class="body-tabs-menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button (click)="changeImgCover(1)" mat-menu-item>
+          <span>Romance</span>
+        </button>
+        <button (click)="changeImgCover(2)" mat-menu-item>
+          <span>Casual</span>
+        </button>
+      </mat-menu>
+    </div>
+    <div class="body-tabs-content">
+      <mat-tab-group>
+        <mat-tab class="tab" label="Album">
+          <div class="body-content">
+            <app-home-card *ngFor="let album of albumData" [album]="album" (buyClicked)="buyAlbum($event)"></app-home-card>
+          </div>
+        </mat-tab>
+        <mat-tab label="Daniel Caesar">
+          <div class="about">
+            <app-home-about></app-home-about>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,97 @@
+.img-cover{
+  width: 100%;
+  height: 200px;
+  overflow:auto;
+  object-fit: cover;
+}
+.body-tabs{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin-top: -200px;
+}
+
+/* mat-icon{
+  font-family: 'Material Icons';
+} */
+
+.body-tabs-menu{
+  align-self: flex-end;
+}
+
+.body-tabs-content{
+  margin-top: 106px;
+}
+
+.body-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 90%;
+  /* padding: 20px; */
+}
+
+.tab{
+  color: white;
+}
+
+.about{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+/* Mengatur latar belakang .body */
+.body {
+  background-color: #EEEEEE; /* Warna latar belakang */
+  color: #222831; /* Warna teks */
+}
+
+/* Mengatur latar belakang .body-tabs */
+.body-tabs {
+  background-color: #EEEEEE; /* Warna latar belakang */
+}
+
+/* Mengatur warna teks pada .body-tabs-menu */
+.body-tabs .body-tabs-menu {
+  color: #00ADB5; /* Warna teks */
+}
+
+/* Mengatur warna latar belakang tombol ikon */
+.body-tabs .body-tabs-menu button.mat-icon-button {
+  background-color: transparent; /* Latar belakang transparan */
+}
+
+/* Mengatur warna latar belakang menu saat dihover */
+.body-tabs .body-tabs-menu button.mat-icon-button:hover {
+  background-color: #BBE1FA; /* Warna latar belakang saat dihover */
+}
+
+/* Mengatur warna ikon menu */
+.body-tabs .body-tabs-menu button.mat-icon-button mat-icon {
+  color: #00ADB5; /* Warna ikon */
+}
+
+/* Mengatur warna teks menu saat dihover */
+.body-tabs .body-tabs-menu button.mat-icon-button:hover span {
+  color: #222831; /* Warna teks saat dihover */
+}
+
+/* Mengatur warna teks tab aktif */
+.body-tabs .mat-tab-label-active {
+  color: #00ADB5 !important; /* Warna teks tab aktif */
+}
+
+/* Mengatur warna latar belakang tab */
+.body-tabs .mat-tab-header {
+  background-color: #EEEEEE; /* Warna latar belakang tab */
+}
+
+
+
+
+
+
+
+
