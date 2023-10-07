@@ -1,0 +1,132 @@
+<div class="container">
+    <div class="band-form">
+      <h2>Add Bonsai Data</h2>
+      <form [formGroup]="myForm" (ngSubmit)="addBonsai()">
+        <div class="form-group-container">
+          <div class="form-group">
+            <label for="img">{{"imgLabel" | translate}}</label>
+            <input type="text" id="img" formControlName="img" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="name">{{"nameLabel" | translate}}</label>
+            <input type="text" id="name" formControlName="name" required >
+          </div>
+  
+          <div class="form-group">
+            <label for="nickname">{{"nicknameLabel" | translate}}</label>
+            <input class="form-control" type="text" id="nickname" formControlName="nickname" required pattern="^[A-Za-z\s]+$">
+            <div *ngIf="myForm.get('nickname').hasError('pattern')" >
+              Nama tidak boleh mengandung angka.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="species">{{"speciesLabel" | translate}}</label>
+            <input type="text" id="species" formControlName="species" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="from">{{"fromLabel" | translate}}</label>
+            <input type="text" id="from" formControlName="from" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="stock">{{"stockLabel"| translate}}</label>
+            <input type="number" id="stock" formControlName="stock" required>
+            <div *ngIf="myForm.get('stock').hasError('stockTooLow')" class="error-message">
+              <!-- Stock tidak boleh kurang dari 3. -->
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="price">{{"priceLabel" | translate}}</label>
+            <input type="number" id="price" formControlName="price" required>
+          </div>
+        </div>
+        <br>
+        <h5>Dokumen</h5>
+        <div class="form-array" formArrayName="document">
+          <div class="form-array-content" *ngFor="let doc of document.controls; let i = index" [formGroupName]="i">
+            <div class="form-group-container">
+              <hr>
+              <div class="form-group">
+                <label for="documentType">{{"documentTypeLabel" | translate}}</label>
+                <input type="text" id="documentType" formControlName="documentType" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="personName">{{"personNameLabel" | translate}}</label>
+                <input type="text" id="personName" formControlName="personName" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="address">{{ "addressLabel"| translate}}</label>
+                <input type="text" id="address" formControlName="address" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="personId">{{"personIdLabel" | translate}}</label>
+                <input type="text" id="personId" formControlName="personId" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="email">{{"emailLabel" | translate}}</label>
+                <input type="email" id="email" formControlName="email" required>
+              </div>
+            </div>
+            <button type="button" class="add" (click)="removeDocument(i)">Remove</button>
+          </div>
+          <button type="button" class="cssbuttons-io-button" (click)="addDocument()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
+            <span>Add</span>
+          </button>
+        </div>
+        <br>
+        <h5>Include Item</h5>
+        <div class="form-array" formArrayName="includeItem">
+          <div class="form-array-content" *ngFor="let item of includeItem.controls; let i = index" [formGroupName]="i">
+           <div class="form-group-container">
+            <hr>
+            <div class="form-group">
+              <label for="itemName">{{"itemNameLabel" | translate}}</label>
+              <input type="text" id="itemName" formControlName="itemName" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="material">{{"materialLabel" | translate}}</label>
+              <input type="text" id="material" formControlName="material" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="packaging">{{ "packagingLabel"| translate}}</label>
+              <input type="text" id="packaging" formControlName="packaging" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="useFor">{{"useForLabel" | translate}}</label>
+              <input type="text" id="useFor" formControlName="useFor" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="itemPrice">{{"itemPriceLabel" | translate}}</label>
+              <input type="number" id="itemPrice" formControlName="itemPrice" required>
+            </div>
+           </div>
+  
+            <button type="button" class="add" (click)="removeIncludeItem(i)">Remove</button>
+
+          </div>
+          <button type="button" class="cssbuttons-io-button" (click)="addIncludeItem()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
+            <span>Add</span>
+          </button>
+        </div>
+  
+        <div class="form-button">
+          <button type="submit" [disabled]="isSubmitDisabled">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

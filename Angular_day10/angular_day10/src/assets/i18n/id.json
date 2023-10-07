@@ -1,0 +1,20 @@
+{
+    "imgLabel": "URL Gambar:",
+    "nameLabel": "Nama Bonsai:",
+    "nicknameLabel": "Nama Panggilan:",
+    "speciesLabel": "Spesies:",
+    "fromLabel": "Dari:",
+    "stockLabel": "Stok:",
+    "priceLabel": "Harga:",
+    "documentTypeLabel": "Tipe Dokumen:",
+    "personNameLabel": "Nama Penjual:",
+    "addressLabel": "Alamat:",
+    "personIdLabel": "ID Penjual:",
+    "emailLabel": "Email Penjual:",
+    "itemNameLabel": "Nama Item:",
+    "materialLabel": "Bahan:",
+    "packagingLabel": "Kemasan:",
+    "useForLabel": "Digunakan Untuk:",
+    "itemPriceLabel": "Harga Item:"
+  }
+  

@@ -1,0 +1,13 @@
+<div class="band">
+    <img [src]="bonsai.img" alt="{{ bonsai.name }}">
+    <h2>{{ bonsai.name }}</h2>
+    <p>{{ bonsai.nickname | uppercase }}</p>
+    <p>{{ bonsai.price | currency:'IDR':'symbol':'1.0-0' }}</p>
+    <div class="button-section">
+        <div class="section-button">
+            <button class="btn btn-success btn-sm m-1" [routerLink]="['/detail-page',bonsai.id]">Detail</button>
+            <button class="btn btn-success btn-sm" [routerLink]="['/creation-form',bonsai.id]">Edit</button>
+        </div>
+        <a (click)="deleteBonsai()">Delete</a>
+    </div>
+  </div>

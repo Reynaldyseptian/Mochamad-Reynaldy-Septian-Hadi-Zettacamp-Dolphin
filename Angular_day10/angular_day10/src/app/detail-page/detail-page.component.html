@@ -1,0 +1,43 @@
+  <div class="body">
+    <div class="detail-container">
+        <div class="band-detail">
+            <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="{{ bonsaiDetail.name }}">
+            <h2 class="band-name">{{ bonsaiDetail.name }}</h2>
+            <p class="band-manager">Nickname {{ bonsaiDetail.nickname }}</p>
+            <p class="band-email">Species: {{ bonsaiDetail.species }}</p>
+            <p class="band-genre">From: {{ bonsaiDetail.from }}</p>
+            <p class="band-regist">Stock: {{ bonsaiDetail.stock }}</p>
+            <p>Price: Rp.{{bonsaiDetail.price}}</p>
+        </div>
+        <br>
+        <h2>Document:</h2>
+        <div class="addresses" *ngFor="let doc of bonsaiDetail.document">
+            <hr>
+            <strong>Jenis Dokumen:</strong> {{ doc.documentType }}<br>
+            <strong>Nama Penjual:</strong> {{ doc.personName }}<br>
+            <strong>Alamat Penjual:</strong> {{ doc.address }}<br>
+            <strong>ID Penjual:</strong> {{ doc.personId }}<br>
+            <strong>Email:</strong> {{ doc.email }}<br><br>
+        </div>
+    </div>
+
+    <div class="detail-information">
+        <h2>Item Include</h2>
+        <div class="addresses" *ngFor="let item of bonsaiDetail.includeItem">
+            <hr>
+              <strong>Nama Item:</strong> {{ item.itemName }}<br>
+              <strong>Bahan:</strong> {{ item.material }}<br>
+              <strong>Kemasan:</strong> {{ item.packaging }}<br>
+              <strong>Digunakan untuk:</strong> {{ item.useFor }}<br>
+              <strong>Harga Item:</strong> Rp {{ item.itemPrice }}<br><br>
+        </div>
+        <br>
+        <div>
+            <button class="add" [routerLink]="['/creation-form',bonsaiDetail.id]">Edit</button>
+            <button class="add" (click)="deleteBonsai(bonsaiDetail.id)">Delete</button>
+        </div>
+    </div>
+</div>
+
+
+  

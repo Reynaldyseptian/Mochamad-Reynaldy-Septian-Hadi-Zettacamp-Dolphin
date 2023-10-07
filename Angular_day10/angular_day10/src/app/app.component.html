@@ -1,0 +1,15 @@
+<nav id='menu'>
+  <div>
+    <ul>
+      <li><a [routerLink]="['']">Home</a></li>
+      <li><a  [routerLink]="['/creation-form', 'add-data']">Add Products</a></li>
+    </ul>
+  </div>
+  <div>
+    <ul>
+      <li><a (click)="switchLanguage('en')">English</a></li>
+      <li><a  (click)="switchLanguage('id')">Bahasa</a></li>
+    </ul>
+  </div>
+  </nav>
+<router-outlet></router-outlet>
