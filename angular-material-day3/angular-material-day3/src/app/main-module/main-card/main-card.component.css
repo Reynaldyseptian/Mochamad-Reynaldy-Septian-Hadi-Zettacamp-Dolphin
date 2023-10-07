@@ -1,0 +1,66 @@
+
+.example-card{
+    padding-bottom: 2px;
+    width: 70%;
+    margin: 5px
+}
+
+hr{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:last baseline;
+    width: 100%;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width:300px;
+    height: 200px;
+    overflow:auto;
+    object-fit: cover;
+}
+.stars{
+    color: #FFDF00;
+}
+  
+  /* Mengatur latar belakang .example-card */
+  .example-card {
+    background-color: #FFFFFF; /* Warna latar belakang kartu */
+  }
+  
+  /* Mengatur garis pemisah */
+  hr {
+    border-color: #BBBBBB; /* Warna garis pemisah */
+  }
+  
+  /* Mengatur warna teks dalam .example-card */
+  .example-card mat-card-title,
+  .example-card mat-card-subtitle {
+    color: #222831; /* Warna teks judul dan subjudul */
+  }
+  
+
+  
+
+  
+  
+  /* Mengatur latar belakang tombol "Shop Album" */
+  mat-card-actions button.mat-raised-button {
+    background-color: #00ADB5; /* Warna latar belakang tombol */
+    color: #EEEEEE; /* Warna teks tombol */
+  }
+  
+  /* Mengatur warna teks tombol "Shop Album" saat dihover */
+  mat-card-actions button.mat-raised-button:hover {
+    background-color: #009999; /* Warna latar belakang tombol saat dihover */
+    color: #FFFFFF; /* Warna teks tombol saat dihover */
+  }
+  

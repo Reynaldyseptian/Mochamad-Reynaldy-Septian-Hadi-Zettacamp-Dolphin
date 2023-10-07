@@ -1,0 +1,14 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.gender{
+    display: flex;
+    flex-direction: column;
+}
+
+.civility{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.button-section{
+    margin-bottom: 20px;
+}
+
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+button {
+    background-color: #00ADB5; /* Warna latar belakang tombol */
+    color: #EEEEEE; /* Warna teks tombol */
+    /* margin-top: 16px; Margin atas untuk tombol */
+  }

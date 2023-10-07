@@ -1,0 +1,45 @@
+<div class="container">
+  <h2 mat-dialog-title>{{"formTitle" | translate}}</h2>
+  <mat-dialog-content [formGroup]="userForm">
+    <div class="form-container">
+      <mat-form-field appearance="fill">
+        <mat-label>{{ "userForm.firstname" | translate }}</mat-label>
+        <input matInput placeholder="First Name" formControlName="firstname" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>{{ "userForm.lastname" | translate }}</mat-label>
+        <input matInput placeholder="Last Name" formControlName="lastname" />
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>{{ "userForm.birth" | translate }}</mat-label>
+        <input matInput [matDatepicker]="birthDatePicker" />
+        <mat-datepicker-toggle matSuffix [for]="birthDatePicker"></mat-datepicker-toggle>
+        <mat-datepicker #birthDatePicker></mat-datepicker>
+      </mat-form-field>
+
+      <div class="gender">
+        <mat-form-field appearance="fill">
+          <mat-label>{{ "userForm.gender" | translate }}</mat-label>
+          <mat-select formControlName="gender" placeholder="Select Gender">
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="Female">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="civility">
+        <mat-label>{{ "userForm.civility" | translate }}</mat-label>
+        <mat-radio-group class="civility" aria-label="Select an option" formControlName="civility">
+          <mat-radio-button value="Mr">Mr</mat-radio-button>
+          <mat-radio-button value="Mrs">Mrs</mat-radio-button>
+          <mat-radio-button value="netral">netral</mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-raised-button color="warn" (click)="onClose()">{{ "close" | translate }}</button>
+    <button mat-raised-button color="primary" (click)="onAddOrEdit()">{{ "save" | translate }}</button>
+  </mat-dialog-actions>
+</div>

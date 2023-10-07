@@ -1,0 +1,12 @@
+{
+    "formTitle": "Add New User",
+    "userForm.firstname": "first name",
+    "userForm.lastname": "last name",
+    "userForm.birth": "birth date",
+    "userForm.civility":"Civility",
+    "userForm.gender" : "gender",
+    "close": "Close",
+    "save": "Save",
+    "addUser": "Add User",
+    "swichLang": "Swich Lang"
+}

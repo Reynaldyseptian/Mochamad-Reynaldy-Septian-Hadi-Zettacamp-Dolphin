@@ -1,0 +1,12 @@
+{
+    "formTitle": "Tambah User Baru",
+    "userForm.firstname": "Nama Depan",
+    "userForm.lastname": "Nama Belakang",
+    "userForm.birth": "Tanggal Lahir",
+    "userForm.civility":"Civility",
+    "userForm.gender" : "Jenis Kelamin",
+    "close": "Tutup",
+    "save": "Simpan",
+    "addUser": "Tambahkan User",
+    "swichLang": "Bahasa"
+}

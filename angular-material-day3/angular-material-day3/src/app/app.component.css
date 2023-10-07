@@ -1,0 +1,69 @@
+
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    padding:5px
+  }
+  
+  .section-title{
+    margin-left: 20px;
+  }
+  
+  .example-icon{
+    margin-right: 10px;
+    width: 20px;
+  }
+  
+  
+  .example-sidenav{
+    width: 13%;
+  }
+  
+  .main-content{
+    width: 87%;
+    padding:0px;
+    /* background-color: #445D48; */
+  }
+  
+  
+  /* Mengatur latar belakang sidenav dan warna teks */
+  .example-sidenav {
+    background-color: #222831; /* Warna latar belakang */
+    color: #EEEEEE; /* Warna teks */
+    padding: 16px; /* Padding untuk memberikan ruang di sekitar konten */
+  }
+  
+  /* Mengatur garis pemisah */
+  .example-sidenav hr {
+    border-color: #393E46; /* Warna garis pemisah */
+  }
+  
+  /* Mengatur gaya teks pada toolbar */
+  .example-sidenav .toolbar {
+    margin-top: 16px; /* Margin atas untuk toolbar */
+  }
+  
+  /* Mengatur warna ikon dan teks dalam tombol toolbar */
+  .example-sidenav .example-icon,
+  .example-sidenav .mat-toolbar-row button span {
+    color: #eeeeee; /* Warna ikon dan teks */
+  }
+  
+  /* Mengatur warna latar belakang tombol dalam toolbar saat dihover */
+  .example-sidenav .mat-toolbar-row button:hover {
+    background-color: #393E46; /* Warna latar belakang saat dihover */
+  }
+  
+  /* Mengatur warna teks tombol saat dihover */
+  .example-sidenav .mat-toolbar-row button:hover span {
+    color: #EEEEEE; /* Warna teks saat dihover */
+  }
+  
+ 
+  .example-sidenav button.mat-raised-button {
+    background-color: #00ADB5; /* Warna latar belakang tombol */
+    color: #EEEEEE; /* Warna teks tombol */
+    margin-top: 16px; /* Margin atas untuk tombol */
+  }
+  
+  

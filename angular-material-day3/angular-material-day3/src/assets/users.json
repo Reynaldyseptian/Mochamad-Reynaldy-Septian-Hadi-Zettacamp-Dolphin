@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "firstname": "Reynaldy",
+      "lastname": "Septian",
+      "gender": "Male",
+      "birth": "Mon Nov 07 2022 12:22:12 GMT+0700 (Indochina Time)", 
+      "civility": "Mr"
+    },
+    {
+      "id": 2,
+      "firstname": "Asyrof",
+      "lastname": "Udin",
+      "gender": "Male",
+      "birth": "Mon Nov 07 2022 12:22:12 GMT+0700 (Indochina Time)",
+      "civility": "Mr"
+    },
+    {
+      "id": 3,
+      "firstname": "Guntur",
+      "lastname": "Petir",
+      "gender": "Male",
+      "birth": "Mon Nov 07 2022 12:22:12 GMT+0700 (Indochina Time)",
+      "civility": "Mr"
+    },
+    {
+      "id": 4,
+      "firstname": "Ari",
+      "lastname": "Johan",
+      "gender": "Male",
+      "birth": "Mon Nov 07 2022 12:22:12 GMT+0700 (Indochina Time)",
+      "civility": "Mr"
+    },
+    {
+      "id": 5,
+      "firstname": "Ayana",
+      "lastname": "Shahab",
+      "gender": "Female",
+      "birth": "Mon Nov 07 2022 12:22:12 GMT+0700 (Indochina Time)",
+      "civility": "Ms"
+    }
+  ]
