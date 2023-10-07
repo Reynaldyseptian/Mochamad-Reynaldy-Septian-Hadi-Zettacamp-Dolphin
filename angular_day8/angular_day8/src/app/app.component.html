@@ -1,0 +1,41 @@
+<!-- navbar start  -->
+<nav class="navbar navbar-expand-lg fixed-top" [ngStyle]="navbg">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink=""><img class="brand-logo" src="https://cdn-icons-png.flaticon.com/128/8413/8413934.png?ga=GA1.1.114240843.1691567014&track=ais" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/form', 'add-data']">Add More Band</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end  -->
+<!--Banner Start-->
+<div class="contain-fluid">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000" *ngFor="let adsData of ads;let i=index"
+        [ngClass]="{active:i===1}">
+        <img [attr.src]="adsData" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!--Banner End-->
+<router-outlet></router-outlet>
+

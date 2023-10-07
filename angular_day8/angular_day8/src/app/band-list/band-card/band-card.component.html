@@ -1,0 +1,8 @@
+<div class="band">
+    <img [src]="band.img" alt="{{ band.bandName }}">
+    <h2>{{ band.bandName }}</h2>
+    <p>{{ band.manager }}</p>
+    <p>{{ band.genre }}</p>
+    <button [routerLink]="['/form',band.id]" >Edit </button>
+    <button  [routerLink]="['/detail',band.id]">Detail</button>
+  </div>

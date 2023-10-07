@@ -1,0 +1,35 @@
+<div class="body">
+    <div class="detail-container">
+        <div class="band-detail">
+            <img [src]="selectedBand.img" alt="{{ selectedBand.bandName }}">
+            <h2 class="band-name">{{ selectedBand.bandName }}</h2>
+            <p class="band-manager">Manager: {{ selectedBand.manager }}</p>
+            <p class="band-email">Email: {{ selectedBand.email }}</p>
+            <p class="band-genre">Genre: {{ selectedBand.genre }}</p>
+            <p class="band-regist">Date: {{ selectedBand.registerDate }}</p>
+            <p class="band-payment">Full Payment: {{ selectedBand.payment ? 'Ya' : 'Tidak' }}</p>
+        </div>
+        <h2>Get Merch At:</h2>
+        <div class="addresses" *ngFor="let addresses of selectedBand.addresses">
+            <hr>
+            <h2>{{addresses.address}}</h2>
+            <p>{{addresses.country}}</p>
+            <p>{{addresses.city}}</p>
+            <p>{{addresses.zipCode}}</p>
+        </div>
+    </div>
+
+    <div class="detail-information">
+        <h2>Band Personnel</h2>
+        <div class="personnel-container-card" *ngFor="let personnel of selectedBand.personnel">
+            <div class="personnel-card">
+                <img [src]="personnel.memberImg">
+                <h2>{{personnel.memberName}} {{personnel.memberLastName}}</h2>
+                <p>{{personnel.position}}</p>
+                <p>{{personnel.umur}}</p>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+

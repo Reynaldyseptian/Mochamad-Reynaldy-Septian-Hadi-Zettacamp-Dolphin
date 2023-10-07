@@ -1,0 +1,44 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+*{
+    color: whitesmoke;
+}
+
+a{
+    font-weight: 600;
+}
+
+.brand-logo{
+    width: 60px;
+    height: 60px;
+}
+
+.nav-link:hover{
+    color: darkgray;
+}
+
+.carousel-inner
+{
+    height: 400px;
+}
+
+.carousel-inner .carousel-item img
+{
+    height: 400px;
+    object-fit: cover;
+    overflow: auto;
+}
+
+/* 
+040D12
+183D3D
+5C8374
+93B1A6
+*/

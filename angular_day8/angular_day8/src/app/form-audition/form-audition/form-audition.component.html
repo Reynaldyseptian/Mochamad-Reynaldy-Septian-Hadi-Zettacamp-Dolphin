@@ -1,0 +1,118 @@
+ <div class="container">
+  <div class="band-form">
+    <h2>Tambah Data Band</h2>
+    <form [formGroup]="myForm" (ngSubmit)="addBand()">
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="bandName">Nama Band:</label>
+          <input type="text" id="bandName" formControlName="bandName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="manager">Manager:</label>
+          <input type="text" id="manager" formControlName="manager" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="genre">Genre:</label>
+          <input type="text" id="genre" formControlName="genre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="registerDate">Tanggal Pendaftaran:</label>
+          <input type="text" id="registerDate" formControlName="registerDate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Pembayaran:</label>
+          <select id="payment" formControlName="payment" required>
+            <option value="true">Ya</option>
+            <option value="false">Tidak</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="img">URL Gambar:</label>
+          <input type="text" id="img" formControlName="img" required>
+        </div>
+      </div>
+      <br>
+      <h5>Tambah Alamat Store Merch</h5>
+      <div class="form-array" formArrayName="addresses">
+        <div class="form-group-container" *ngFor="let address of addresses.controls; let i = index"
+              [formGroupName]="i">
+                 
+            <hr>
+            <div class="form-group">
+              <label for="address">Alamat:</label>
+              <input type="text" id="address" formControlName="address" required>
+            </div>
+
+            <div class="form-group">
+              <label for="city">City:</label>
+              <input type="text" id="city" formControlName="city" required>
+            </div>
+
+            <div class="form-group">
+              <label for="zipCode">Zip Code:</label>
+              <input type="number" id="zipCode" formControlName="zipCode" required>
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country:</label>
+              <input type="text" id="country" formControlName="country" required>
+            </div>
+          
+          <button type="button" class="remove" (click)="removeAddress(i)">x</button>
+        </div>
+        <button type="button" class="add" (click)="addAddress()">Tambah Alamat</button>
+      </div>
+      <br>
+      <h5>Tambahkan Personnel</h5>
+      <div class="form-array" formArrayName="personnel">
+        <div class="form-group-container" *ngFor="let personnel of personnel.controls; let i = index"
+              [formGroupName]="i">
+            <hr>
+            <div class="form-group">
+              <label for="memberImg">Personnel Picture:</label>
+              <input type="text" id="memberImg" formControlName="memberImg" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="memberName">Name:</label>
+              <input type="text" id="memberName" formControlName="memberName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="memberLastName">Last Name:</label>
+              <input type="text" id="memberLastName" formControlName="memberLastName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="position">Position:</label>
+              <input type="text" id="position" formControlName="position" required>
+            </div>
+
+            <div class="form-group">
+              <label for="umur">umur:</label>
+              <input type="number" id="umur" formControlName="umur" required>
+            </div>
+          
+          <button type="button" class="remove" (click)="removePersonnel(i)">x</button>
+        </div>
+        <button type="button" class="add" (click)="addPersonnel()">Tambah Personnel</button>
+      </div>
+
+      <div class="form-button">
+        <button type="submit">Simpan</button>
+      </div>
+    </form>
+  </div>
+</div> 
+
+
