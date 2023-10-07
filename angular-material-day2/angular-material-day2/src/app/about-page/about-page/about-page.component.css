@@ -1,0 +1,39 @@
+/* Mengatur latar belakang .container */
+.container {
+    padding: 30px;
+    background-color: #EEEEEE; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  /* Mengatur latar belakang .example-card */
+  .example-card {
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 80%;
+    background-color: #FFFFFF; /* Warna latar belakang kartu */
+  }
+  
+  /* Mengatur garis pemisah */
+  hr {
+    border-color: #BBBBBB; /* Warna garis pemisah */
+  }
+  
+  /* Mengatur warna teks dalam .example-card */
+  .example-card mat-card-title,
+  .example-card mat-card-subtitle {
+    color: #222831; /* Warna teks judul dan subjudul */
+  }
+  
+  /* Mengatur warna teks dalam konten kartu */
+  .example-card mat-card-content p {
+    color: #222831; /* Warna teks konten */
+  }
+  
+  /* Mengatur warna teks dalam h2 */
+  .example-card mat-card-content h2 {
+    color: #00ADB5; /* Warna teks h2 */
+  }
+  

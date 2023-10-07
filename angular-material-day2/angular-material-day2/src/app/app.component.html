@@ -1,0 +1,33 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer class="example-sidenav" mode="side" opened>
+    <div>
+      <h2>Table Data</h2>
+    </div>
+    <hr>
+    <div class="toolbar" *ngIf="showFiller">
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['']">
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+          <span>Home Page</span>
+          <span class="example-spacer"></span>
+        </button>
+      </mat-toolbar-row>  
+      <mat-toolbar-row>
+        <button mat-button [routerLink]="['/about']">
+          <mat-icon class="example-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="info"></mat-icon>
+          <span>Information</span>
+          <span class="example-spacer"></span>
+        </button>
+      </mat-toolbar-row>  
+
+    </div>
+    <div>
+      <button class="menu-button" (click)="showFiller = !showFiller" mat-raised-button>
+        Menu
+      </button>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content class="main-content">
+    <router-outlet ></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

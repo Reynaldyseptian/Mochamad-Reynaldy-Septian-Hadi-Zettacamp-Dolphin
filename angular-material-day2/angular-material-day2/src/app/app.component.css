@@ -1,0 +1,109 @@
+mat-drawer-container{
+    height: 900px;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.toolbar{
+    display: flex;
+    flex-direction: column;
+    padding:5px
+  }
+  
+  
+  
+  .example-icon{
+    margin-right: 10px;
+  }
+  h2{
+    margin-top: 15px;
+    margin-left:40px ;
+  }
+
+  .menu-button{
+    margin-left: 50px;
+  }
+  
+  .example-sidenav{
+    width: 13%;
+    /* height: 900px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+  
+  .main-content{
+    width: 87%;
+    padding:0px;
+    /* background-color: #445D48; */
+  }
+  
+  
+  /* Mengatur latar belakang sidenav dan warna teks */
+  .example-sidenav {
+    background-color: #222831; /* Warna latar belakang */
+    color: #EEEEEE; /* Warna teks */
+    /* padding: 16px; */
+  }
+  
+  /* Mengatur garis pemisah */
+  .example-sidenav hr {
+    border-color: #393E46; /* Warna garis pemisah */
+  }
+  
+  /* Mengatur gaya teks pada toolbar */
+  .example-sidenav .toolbar {
+    margin-top: 16px; 
+  }
+  
+  /* Mengatur warna ikon dan teks dalam tombol toolbar */
+  .example-sidenav .example-icon,
+  .example-sidenav .mat-toolbar-row button span {
+    color: #eeeeee; /* Warna ikon dan teks */
+  }
+  
+  /* Mengatur warna latar belakang tombol dalam toolbar saat dihover */
+  .example-sidenav .mat-toolbar-row button:hover {
+    background-color: #393E46; /* Warna latar belakang saat dihover */
+  }
+  
+  /* Mengatur warna teks tombol saat dihover */
+  .example-sidenav .mat-toolbar-row button:hover span {
+    color: #EEEEEE; /* Warna teks saat dihover */
+  }
+  
+  /* Mengatur styling tombol "Toggle extra text" */
+  .example-sidenav button.mat-raised-button {
+    background-color: #00ADB5; /* Warna latar belakang tombol */
+    color: #EEEEEE; /* Warna teks tombol */
+    margin-top: 16px; /* Margin atas untuk tombol */
+  }
+  
+  /* Untuk layar dengan lebar kurang dari 768px */
+@media screen and (max-width: 768px) {
+  mat-drawer-container {
+    flex-direction: column;
+    /* height: auto; */
+    height: 210px;
+  }
+  .example-sidenav {
+  display: flex;
+  flex-direction: row;
+    width: 100%;
+  }
+  .main-content {
+    width: 100%;
+  }
+
+  .toolbar{
+    flex-direction: row;
+  }
+
+  .menu-button{
+    margin-left: 10px;
+  }
+}
+
+  
