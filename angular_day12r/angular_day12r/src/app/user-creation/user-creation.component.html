@@ -1,0 +1,102 @@
+<br>
+<div class="container">
+  <div band-form>
+    <h2>Add User Data</h2>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" formControlName="username" required>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" id="email" formControlName="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" formControlName="phone">
+          </div>
+        
+          <div class="form-group">
+            <label for="website">Website:</label>
+            <input type="text" id="website" formControlName="website">
+          </div>
+        
+      
+
+      </div>
+      <div >
+        <div  formGroupName="address">
+          <h3>Address:</h3>
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="street">Street:</label>
+              <input type="text" id="street" formControlName="street" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="suite">Suite:</label>
+              <input type="text" id="suite" formControlName="suite">
+            </div>
+  
+            <div class="form-group">
+              <label for="city">City:</label>
+              <input type="text" id="city" formControlName="city" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="zipcode">Zipcode:</label>
+              <input type="text" id="zipcode" formControlName="zipcode" required>
+            </div>
+
+        
+            <div class="geo" formGroupName="geo">
+              <div class="form-group">
+                <label for="lat">Lat:</label>
+                <input type="text" id="lat" formControlName="lat">
+              </div>
+              <div class="form-group">
+                <label for="lng">Lng:</label>
+                <input type="text" id="lng" formControlName="lng">
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div >
+        <div formGroupName="company">
+          <h3>Company:</h3>
+          <div class="form-group-container">
+            <div class="form-group">
+              <label for="companyName">Name:</label>
+              <input type="text" id="companyName" formControlName="name">
+            </div>
+            <div class="form-group">
+              <label for="catchPhrase">Catch Phrase:</label>
+              <input type="text" id="catchPhrase" formControlName="catchPhrase">
+            </div>
+            <div class="form-group">
+              <label for="bs">BS:</label>
+              <input type="text" id="bs" formControlName="bs">
+            </div>
+          </div>
+
+        </div>
+      </div> 
+      <div class="form-button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="detail-container">
+        <div class="band-detail">
+            <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg"  alt="{{ userDetail.name }}">
+            <div class="user-data">
+                <h2 class="band-name">{{ userDetail.name }}</h2>
+                <p class="band-manager">Nickname {{ userDetail.nickname }}</p>
+                <p class="band-email">Email: {{ userDetail.email }}</p>
+                <p class="band-genre">Phone: {{ userDetail.phone }}</p>
+                <p class="band-regist">Website: {{ userDetail.website }}</p>
+                <p>Address: {{userDetail.address.street}}, {{userDetail.address.suite}} {{userDetail.address.city}}. {{userDetail.address.zipcode}} </p>
+                <p> {{userDetail.address.geo.lat}} - {{userDetail.address.geo.lat}}</p>
+                <h2>Company</h2>
+                <p>{{userDetail.company.name}}</p>
+                <p>{{userDetail.company.catchPhrase}}</p>
+                <p>{{userDetail.company.bs}}</p>
+            </div>
+        </div>
+        
+    </div>
+</div>

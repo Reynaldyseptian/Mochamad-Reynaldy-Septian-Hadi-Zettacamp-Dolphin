@@ -1,0 +1,23 @@
+<!-- <div class="post-card">
+    <P>{{user.nickname}}</P>
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+    <button [routerLink]="['/creation-form',user.id]">Edit</button>
+    <button [routerLink]="['/user-detail',user.id]">Detail</button>
+    <button  (click)="deleteUser()">Delete</button>
+</div> -->
+
+
+<div class="band">
+    <img src="https://static.vecteezy.com/system/resources/previews/008/442/086/non_2x/illustration-of-human-icon-user-symbol-icon-modern-design-on-blank-background-free-vector.jpg" alt="{{ user.name }}">
+    <h2>{{ user.name }}</h2>
+    <p>{{ user.nickname | uppercase }}</p>
+    <!-- <p>{{ user.price }}</p> -->
+    <div class="button-section">
+        <div class="section-button">
+            <button class="btn btn-success btn-sm m-1" [routerLink]="['/user-detail',user.id]">Detail</button>
+            <button class="btn btn-success btn-sm" [routerLink]="['/creation-form',user.id]">Edit</button>
+        </div>
+        <a (click)="deleteUser()">Delete</a>
+    </div>
+  </div>

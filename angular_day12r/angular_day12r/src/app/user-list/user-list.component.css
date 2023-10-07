@@ -1,0 +1,18 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 20px;
+  }
+  
+  .band-list-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+  }
+  
+  .band-list{
+    width: calc(20% - 10px); 
+    margin: 5px;
+  }

@@ -1,0 +1,19 @@
+<div class="body">
+    <div class="band-list-container">
+        <app-user-card *ngFor="let user of userList" [user]="user" (deleteClicked)="deleteUser($event)"></app-user-card>
+    </div>
+</div>
+
+<!-- <div class="body">
+    <div class="col-md-4 mb-3">
+       <label for="validationDefaultUsername">Search Bonsai</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+          </div>
+          <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" [(ngModel)]="searchTerm" (keyup)="searchBonsai()" required>
+        </div>
+      </div> 
+    <div class="band-list-container">
+        <app-card  *ngFor="let bonsai of bonsaiList" [bonsai]="bonsai" (deleteClicked)="deleteBonsai($event)"></app-card>  
+    </div> 
+</div> -->
